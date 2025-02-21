@@ -80,4 +80,4 @@ bun dev
   </tr>
 </table>
 
-- Docs Swagger untuk API ➡️ [Download collection postman](https://drive.google.com/file/d/1q_A2t1dG2a9lV8McPCnMrXqfg9cWKuQ5/view?usp=sharing)
+- Docs Swagger untuk API ➡️ <a href="https://drive.google.com/file/d/1q_A2t1dG2a9lV8McPCnMrXqfg9cWKuQ5/view?usp=sharing" target="_blank">Download Collection Postman</a>
