@@ -1,10 +1,10 @@
-This is a [Next.js](https://nextjs.org) boilerplate for the course Nextjs [Sanbercode](https://sanbercode.com/)
+Project Open Source untuk Kelas Next.js Batch 64 [Sanbercode](https://sanbercode.com/)
 
-## Getting Started 🚀
+## Persiapan 🚀
 
-- First, Clone this repository ✅
-- Run command `npm install` or `yarn install` for install dependencies and wait until it's finished
-- After that, you can run the development server:
+- Pertama, silahkan `FORK` repo ini terlebih dahulu, nantinya ketika teman2 melakukan fork, repo ini akan diduplicate dan hasil duplicatenya akan masuk ke list repositories masing2
+- Kemudian jalankan perintah `npm install` or `yarn install` untuk melakukan instalasi dependencies yang diperlukan, tunggu sampai instalasi selesai
+- Setelah itu silahkan jalankan perintah berikut:
 
 ```bash
 npm run dev
@@ -16,44 +16,68 @@ pnpm dev
 bun dev
 ```
 
-- And can view the results through a browser
-  ![Nextjs Project.](nextjs.png)
+## Petunjuk Pengerjaan 📎
 
-## Stack this project 🕸️
+- Pengerjaan project menggunakan Next.js `Pages Router` + `Typescript`
+- Cara pengerjaan atau contribute di repo ini cukup mudah, teman2 cukup berlomba untuk mengerjakan semua fitur2 dari aplikasi yang tertera dibawah, masing2 dari fitur ada nilai yang akan teman2 dapatkan
+- Flow dalam pengumpulan hasil pengerjaannya akan menggunakan sistem open `Pull Request` detailnya akan disampaikan sewaktu `Live Session`
+- Apabila hasil pengerjaan(fitur) yang di submit melalui Pull Request disetujui, maka teman2 sudah berhasil mendapatkan nilai dan boleh untuk mengerjakan fitur2 yang lain lagi untuk mengumpulkan nilai sebanyak-banyaknya
+- `NOTES:` berkontribusi dalam project ini hukumnya `TIDAK WAJIB`, namun apabila teman2 berhasil mengumpulkan nilainya disini, nilai ini akan dipakai untuk mendongkrak nilai dari `Final Project` yang masih kurang
+- Ada hadiah menarik bagi teman2 yang berhasil mengerjakan fitur2 ini, yaitu:
+- 🥇 ➡️ GOPAY 150K
+- 🥈 ➡️ GOPAY 100K
+- 🥉 ➡️ GOPAY 50K
 
-- Nextjs (Pages Router) ✅
-- React ✅
-- Eslint ✅
-- Prettier ✅
-- Typescript ✅
+## Fitur yang akan dikerjakan 💻
 
-## Custom VScode Settings
+- List Fitur
 
-The configuration below can be viewed through the root folder `.vscode/settings.json`
+<table>
+  <tr>
+    <th>Modul</th>
+    <th>Fitur</th>
+    <th>Deskripsi</th>
+    <th>Point</th>
+    <th>Status</th>
+    <th>Finished By</th>
+  </tr>
+  <tr>
+    <td rowspan="4">Authentication</td>
+    <td>Login</td>
+    <td>...</td>
+    <td>5</td>
+    <td>
+      <input type="checkbox" />
+    </td>
+    <td>username/email</td>
+  </tr>
+  <tr>
+    <td>Login</td>
+    <td>...</td>
+    <td>5</td>
+    <td>
+      <input type="checkbox" />
+    </td>
+    <td>username/email</td>
+  </tr>
+  <tr>
+    <td>Register</td>
+    <td>...</td>
+    <td>8</td>
+    <td>
+      <input type="checkbox" />
+    </td>
+    <td>username/email</td>
+  </tr>
+  <tr>
+    <td>Get Profile</td>
+    <td>...</td>
+    <td>5</td>
+    <td>
+      <input type="checkbox" />
+    </td>
+    <td>username/email</td>
+  </tr>
+</table>
 
-```json
-{
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "eslint.format.enable": true,
-  "eslint.lintTask.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "javascriptreact"
-  ]
-}
-```
+- Docs Swagger untuk API ➡️ [Download collection postman](https://drive.google.com/file/d/1q_A2t1dG2a9lV8McPCnMrXqfg9cWKuQ5/view?usp=sharing)
