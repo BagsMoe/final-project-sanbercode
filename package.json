@@ -1,6 +1,6 @@
 {
-  "name": "nexts-sb-pages-router",
-  "version": "0.1.0",
+  "name": "nexts-sb-daily-64",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
