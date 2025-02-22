@@ -2,272 +2,300 @@ Project Open Source untuk Kelas Next.js Batch 64 [Sanbercode](https://sanbercode
 
 ## Persiapan 🚀
 
-- Opsi Pertama, silahkan `FORK` repo ini terlebih dahulu, nantinya ketika teman2 melakukan fork, repo ini akan diduplicate dan hasil duplicatenya akan masuk ke list repositories masing2
-- Opsi Kedua, silahkan clone repo ini di local pc/laptop masing2. kemudian pengerjaan bisa langsung dilakukan di local
-- Kemudian jalankan perintah `npm install` or `yarn install` untuk melakukan instalasi dependencies yang diperlukan, tunggu sampai instalasi selesai
-- Setelah itu silahkan jalankan perintah berikut:
+<ul>
+<li>2 Opsi dalam melakukan init repo (pilih salah satu):
+  <ol>
+    <li> silahkan <code>FORK</code> repo ini terlebih dahulu, nantinya ketika teman2 melakukan fork, repo ini akan diduplicate dan hasil duplicatenya akan masuk ke list repositories masing2
+    </li>
+    <li>Opsi Kedua, silahkan clone repo ini di local pc/laptop masing2. kemudian pengerjaan bisa langsung dilakukan di local
+    </li>
+  </ol>
+</li>
+<li>
+  Kemudian jalankan perintah <code>npm install</code> or <code>yarn install</code> untuk melakukan instalasi dependencies yang diperlukan, tunggu sampai instalasi selesai
+</li>
+<li>Setelah itu silahkan jalankan perintah berikut:</li>
+</ul>
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 ## Petunjuk Pengerjaan 📎
 
-- Pengerjaan project menggunakan Next.js `Pages Router` + `Typescript`
-- Cara pengerjaan atau contribute di repo ini cukup mudah, teman2 cukup berlomba untuk mengerjakan semua fitur2 dari aplikasi yang tertera dibawah, masing2 dari fitur ada nilai yang akan teman2 dapatkan
-- Flow dalam pengumpulan hasil pengerjaannya akan menggunakan sistem open `Pull Request` detailnya akan disampaikan sewaktu `Live Session`
-- Apabila hasil pengerjaan(fitur) yang di submit melalui Pull Request disetujui, maka teman2 sudah berhasil mendapatkan nilai dan boleh untuk mengerjakan fitur2 yang lain lagi untuk mengumpulkan nilai sebanyak-banyaknya
-- `NOTES:` berkontribusi dalam project ini hukumnya `TIDAK WAJIB`, namun apabila teman2 berhasil mengumpulkan nilainya disini, nilai ini akan dipakai untuk mendongkrak nilai dari `Final Project` yang masih kurang
-- Ada hadiah menarik bagi teman2 yang berhasil mengerjakan fitur2 ini, yaitu:
-- 🥇 GOPAY `150K` ✨
-- 🥈 GOPAY `100K` ✨
-- 🥉 GOPAY `50K` ✨
+<ul>
+<li>
+  Pengerjaan project menggunakan Next.js <code>Pages Router</code> + <code>Typescript</code>
+</li>
+<li>
+  Cara pengerjaan atau contribute di repo ini cukup mudah, teman2 cukup berlomba untuk mengerjakan semua fitur2 dari aplikasi yang tertera dibawah, masing2 dari fitur ada nilai yang akan teman2 dapatkan
+</li>
+<li>
+  Flow dalam pengumpulan hasil pengerjaannya akan menggunakan sistem open <code>Pull Request</code> detailnya akan disampaikan sewaktu <code>Live Session</code> videonya bisa ditonton disini
+</li>
+<li>
+  Apabila hasil pengerjaan(fitur) yang di submit melalui Pull Request disetujui, maka teman2 sudah berhasil mendapatkan nilai dan boleh untuk mengerjakan fitur2 yang lain lagi untuk mengumpulkan nilai sebanyak-banyaknya
+</li>
+<li>
+  <code>NOTES:</code> berkontribusi dalam project ini hukumnya <code>TIDAK WAJIB</code>, namun apabila teman2 berhasil mengumpulkan nilainya disini, nilai ini akan dipakai untuk mendongkrak nilai dari <code>Final Project</code> yang masih kurang
+</li>
+<li>
+  Ada hadiah menarik bagi teman2 yang berhasil mengerjakan fitur2 ini, yaitu:
+  <ol>
+    <li>🥇 GOPAY <code>150K</code> ✨</li>
+    <li>🥈 GOPAY <code>100K</code> ✨</li>
+    <li>🥉 GOPAY <code>50K</code> ✨</li>
+  </ol>
+</li>
+</ul>
 
 ## Fitur yang akan dikerjakan 💻
 
-- List Fitur 🔥
+- Referensi tampilan Web ➡️ <a href="https://sanber-daily.vercel.app" target="_blank">Visit Here</a>
+
+- List Features 🔥
 
 <table>
-  <tr>
-    <th>Modul</th>
-    <th>Fitur</th>
-    <th>Deskripsi</th>
-    <th>Point</th>
-    <th>Status</th>
-    <th>Finished By</th>
-  </tr>
-  <!-- Authentication -->
-  <tr>
-    <td rowspan="4">Authentication</td>
-    <td>Register</td>
-    <td>
-    <ol>
-    <li>Buat routing di <code>/register</code></li>
-    <li>Sesuaikan form register mengikuti payload yang tersedia di endpoint <code>/api/register</code></li>
-    </ol>
-    </td>
-    <td>5</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Login</td>
-    <td>
-    <ol>
-    <li>Buat routing di <code>/login</code></li>
-    <li>Token yang berhasil di generate after login, disimpan ke cookies</li>
-    <li>Implementasi <code>middleware</code>, apabila ada token dan valid, user bisa mengakses routing index <code>/</code></li>
-    <li>Apabila sebaliknya, user hanya bisa mengakses routing <code>/</code> & <code>/register</code></li>
-    </ol>
-    </td>
-    <td>5</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Logout</td>
-    <td>
-    <ol>
-    <li>Cukup create function untuk logout, proses logout dapat menggunakan endpoint <code>/logout</code></li>
-    <li>Apabila response dari endpointnya success, jangan lupa remove cookiesnya di browser</li>
-    </ol>
-    </td>
-    <td>8</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Get Profile</td>
-    <td>
-    <ol>
-    <li>Buat routing di <code>/profile</code></li>
-    <li>Untuk mendapatkan data user, bisa menggunakan endpoint <code>/me</code></li>
-    </ol>
-    </td>
-    <td>5</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <!-- Posts -->
-  <tr>
-    <td rowspan="4">Posts</td>
-    <td>Display All Posts</td>
-    <td>
-    <ol>
-    <li>Semua Posts bisa ditampilkan di routing <code>/</code></li>
-    <li>Untuk menampilkan semua Posts cukup mainkan query paramnya <code>GET /api/posts?type=all</code></li>
-    </ol>
-    </td>
-    <td>6</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Display Self Posts</td>
-    <td>
-    <ol>
-    <li>Untuk Posts milik sendiri <code>GET /api/posts?type=me</code></li>
-    </ol>
-    </td>
-    <td>6</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Updating Self Posts</td>
-    <td>
-    <ol>
-    <li>Untuk update Posts milik sendiri <code>PATCH /api/post/update/:post_id</code></li>
-    </ol>
-    </td>
-    <td>8</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Deleting Self Posts</td>
-    <td>
-    <ol>
-    <li>Untuk delete Posts milik sendiri <code>DELETE /api/post/delete/:post_id</code></li>
-    </ol>
-    </td>
-    <td>6</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <!-- Reply -->
-  <tr>
-    <td rowspan="4">Reply</td>
-    <td>Display Replies Count</td>
-    <td>
-    <ol>
-    <li>Response dari endpoint ini <code>GET /api/posts</code> terdapat field yang menampilkan jumlah replies</li>
-    </ol>
-    </td>
-    <td>6</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Display List Reply by Post</td>
-    <td>
-    <ol>
-    <li>Bisa menggunakan endpoint <code>GET /api/replies/post/:post_id</code></li>
-    </ol>
-    </td>
-    <td>6</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Reply by Post</td>
-    <td>
-    <ol>
-    <li>Bisa menggunakan endpoint <code>POST /api/replies/post/:post_id</code></li>
-    </ol>
-    </td>
-    <td>8</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Deleting self Reply</td>
-    <td>
-    <ol>
-    <li>Untuk menghapus reply milik sendiri <code>DELETE /api/replies/delete/:reply_id</code></li>
-    </ol>
-    </td>
-    <td>6</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <!-- Like -->
-  <tr>
-    <td rowspan="3">Like</td>
-    <td>Display Likes Count</td>
-    <td>
-    <ol>
-    <li>Response dari endpoint ini <code>GET /api/posts</code> terdapat field yang menampilkan jumlah likes</li>
-    </ol>
-    </td>
-    <td>6</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Likes Post</td>
-    <td>
-    <ol>
-    <li>Bisa menggunakan endpoint <code>POST /api/likes/post/:post_id</code></li>
-    </ol>
-    </td>
-    <td>7</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>Unlikes Post</td>
-    <td>
-    <ol>
-    <li>Bisa menggunakan endpoint <code>POST /api/unlikes/post/:post_id</code></li>
-    </ol>
-    </td>
-    <td>7</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
-  <!-- Notification -->
-  <tr>
-    <td>Notification</td>
-    <td>Display List Notifications</td>
-    <td>
-    <ol>
-    <li>Buat routing di <code>/notification</code> </li>
-    <li>Bisa menggunakan endpoint <code>GET /api/notifications</code></li>
-    </ol>
-    </td>
-    <td>6</td>
-    <td>
-      <input type="checkbox" />
-    </td>
-    <td>...</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Feature</th>
+      <th>Description</th>
+      <th>Point</th>
+      <th>Status</th>
+      <th>Finished By</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Authentication -->
+    <tr>
+      <td rowspan="4">Authentication</td>
+      <td>Register</td>
+      <td>
+      <ol>
+      <li>Buat routing di <code>/register</code></li>
+      <li>Sesuaikan form register mengikuti payload yang tersedia di endpoint <code>/api/register</code></li>
+      </ol>
+      </td>
+      <td>5</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Login</td>
+      <td>
+      <ol>
+      <li>Buat routing di <code>/login</code></li>
+      <li>Token yang berhasil di generate after login, disimpan ke cookies</li>
+      <li>Implementasi <code>middleware</code>, apabila ada token dan valid, user bisa mengakses routing index <code>/</code></li>
+      <li>Apabila sebaliknya, user hanya bisa mengakses routing <code>/</code> & <code>/register</code></li>
+      </ol>
+      </td>
+      <td>5</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Logout</td>
+      <td>
+      <ol>
+      <li>Cukup create function untuk logout, proses logout dapat menggunakan endpoint <code>POST /logout</code></li>
+      <li>Apabila response dari endpointnya success, jangan lupa remove cookiesnya di browser</li>
+      </ol>
+      </td>
+      <td>8</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Get Profile</td>
+      <td>
+      <ol>
+      <li>Buat routing di <code>/profile</code></li>
+      <li>Untuk mendapatkan data user, bisa menggunakan endpoint <code>GET /me</code></li>
+      </ol>
+      </td>
+      <td>5</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <!-- Posts -->
+    <tr>
+      <td rowspan="4">Posts</td>
+      <td>Display All Posts</td>
+      <td>
+      <ol>
+      <li>Semua Posts bisa ditampilkan di routing <code>/</code></li>
+      <li>Untuk menampilkan semua Posts cukup mainkan query paramnya <code>GET /api/posts?type=all</code></li>
+      </ol>
+      </td>
+      <td>6</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Display Self Posts</td>
+      <td>
+      <ol>
+      <li>Untuk Posts milik sendiri <code>GET /api/posts?type=me</code></li>
+      </ol>
+      </td>
+      <td>6</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Updating Self Posts</td>
+      <td>
+      <ol>
+      <li>Untuk update Posts milik sendiri <code>PATCH /api/post/update/:post_id</code></li>
+      </ol>
+      </td>
+      <td>8</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Deleting Self Posts</td>
+      <td>
+      <ol>
+      <li>Untuk delete Posts milik sendiri <code>DELETE /api/post/delete/:post_id</code></li>
+      </ol>
+      </td>
+      <td>6</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <!-- Reply -->
+    <tr>
+      <td rowspan="4">Reply</td>
+      <td>Display Replies Count</td>
+      <td>
+      <ol>
+      <li>Response dari endpoint ini <code>GET /api/posts</code> terdapat field yang menampilkan jumlah replies</li>
+      </ol>
+      </td>
+      <td>6</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Display List Reply by Post</td>
+      <td>
+      <ol>
+      <li>Bisa menggunakan endpoint <code>GET /api/replies/post/:post_id</code></li>
+      </ol>
+      </td>
+      <td>6</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Reply by Post</td>
+      <td>
+      <ol>
+      <li>Bisa menggunakan endpoint <code>POST /api/replies/post/:post_id</code></li>
+      </ol>
+      </td>
+      <td>8</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Deleting self Reply</td>
+      <td>
+      <ol>
+      <li>Untuk menghapus reply milik sendiri <code>DELETE /api/replies/delete/:reply_id</code></li>
+      </ol>
+      </td>
+      <td>6</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <!-- Like -->
+    <tr>
+      <td rowspan="3">Like</td>
+      <td>Display Likes Count</td>
+      <td>
+      <ol>
+      <li>Response dari endpoint ini <code>GET /api/posts</code> terdapat field yang menampilkan jumlah likes</li>
+      </ol>
+      </td>
+      <td>6</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Likes Post</td>
+      <td>
+      <ol>
+      <li>Bisa menggunakan endpoint <code>POST /api/likes/post/:post_id</code></li>
+      </ol>
+      </td>
+      <td>7</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Unlikes Post</td>
+      <td>
+      <ol>
+      <li>Bisa menggunakan endpoint <code>POST /api/unlikes/post/:post_id</code></li>
+      </ol>
+      </td>
+      <td>7</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+    <!-- Notification -->
+    <tr>
+      <td>Notification</td>
+      <td>Display List Notifications</td>
+      <td>
+      <ol>
+      <li>Buat routing di <code>/notification</code> </li>
+      <li>Bisa menggunakan endpoint <code>GET /api/notifications</code></li>
+      </ol>
+      </td>
+      <td>6</td>
+      <td>
+        <input type="checkbox" />
+      </td>
+      <td>...</td>
+    </tr>
+  </tbody>
 </table>
 
 ## Docs Service API 📖
@@ -277,6 +305,6 @@ bun dev
 ## Cara Pengerjaan dan Pengumpulan 📭
 
 - Create branch dengan prefix `feature_[nama fitur]` contoh `feature_login`
-- Kerjakan semua update di branch feature yang telah dibuat sebelumnya, jangan lupa juga update file `README.md` sebelum melakukan commit dengan cara checked column `Status` lalu rubah seperti ini `<input type="checkbox" checked />`
-- Untuk pengumpulannya, silahkan open `Pull Request` di repository ini, lebih detailnya apa saja yang perlu di lakukan, bisa hubungi mentor ✅
+- Kerjakan semua update di branch feature yang telah dibuat sebelumnya, jangan lupa juga update file `README.md` sebelum melakukan commit dengan cara ubah column `Status` seperti ini `<input type="checkbox" checked />` kemudian isikan nama kalian di column `Finished By`
+- Untuk pengumpulannya, silahkan open `Pull Request` di repository ini, lebih detailnya apa saja yang perlu di lakukan, bisa hubungi mentor ✅ 📞
 - Apabila pengerjaannya sesuai, PR akan di approved dan point akan kalian dapatkan 👍👍
