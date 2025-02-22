@@ -4,7 +4,7 @@ Project Open Source untuk Kelas Next.js Batch 64 [Sanbercode](https://sanbercode
 
 <ul>
 <li>2 Opsi dalam melakukan init repo (pilih salah satu):
-  <ol>
+  <ol type="1">
     <li> silahkan <code>FORK</code> repo ini terlebih dahulu, nantinya ketika teman2 melakukan fork, repo ini akan diduplicate dan hasil duplicatenya akan masuk ke list repositories masing2
     </li>
     <li>Opsi Kedua, silahkan clone repo ini di local pc/laptop masing2. kemudian pengerjaan bisa langsung dilakukan di local
@@ -43,7 +43,7 @@ yarn dev
 </li>
 <li>
   Ada hadiah menarik bagi teman2 yang berhasil mengerjakan fitur2 ini, yaitu:
-  <ol>
+  <ol type="1">
     <li>🥇 GOPAY <code>150K</code> ✨</li>
     <li>🥈 GOPAY <code>100K</code> ✨</li>
     <li>🥉 GOPAY <code>50K</code> ✨</li>
