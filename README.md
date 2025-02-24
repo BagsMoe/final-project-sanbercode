@@ -3,13 +3,8 @@ Project Open Source untuk Kelas Next.js Batch 64 [Sanbercode](https://sanbercode
 ## Persiapan 🚀
 
 <ul>
-<li>2 Opsi dalam melakukan init repo (pilih salah satu):
-  <ol type="1">
-    <li> silahkan <code>FORK</code> repo ini terlebih dahulu, nantinya ketika teman2 melakukan fork, repo ini akan diduplicate dan hasil duplicatenya akan masuk ke list repositories masing2
-    </li>
-    <li>Opsi Kedua, silahkan clone repo ini di local pc/laptop masing2. kemudian pengerjaan bisa langsung dilakukan di local
-    </li>
-  </ol>
+<li>
+  Silahkan clone repo, selanjutnya jangan lupa buat repo di masing2 akun github untuk project ini
 </li>
 <li>
   Kemudian jalankan perintah <code>npm install</code> or <code>yarn install</code> untuk melakukan instalasi dependencies yang diperlukan, tunggu sampai instalasi selesai
@@ -30,19 +25,13 @@ yarn dev
   Pengerjaan project menggunakan Next.js <code>Pages Router</code> + <code>Typescript</code>
 </li>
 <li>
-  Cara pengerjaan atau contribute di repo ini cukup mudah, teman2 cukup berlomba untuk mengerjakan semua fitur2 dari aplikasi yang tertera dibawah, masing2 dari fitur ada nilai yang akan teman2 dapatkan
+  Flow dalam pengumpulan hasil pengerjaannya adalah cukup mengumpulkan link repository, submit linknya melalui menu quiz di dashboard masing2
 </li>
 <li>
-  Flow dalam pengumpulan hasil pengerjaannya akan menggunakan sistem open <code>Pull Request</code> detailnya akan disampaikan sewaktu <code>Live Session</code> videonya bisa ditonton disini
+  <code>NOTES:</code>project ini adalah Mini project dan akan di submit sebagai quiz pekan 3, hasil dari pengerjaan akan dipakai juga mendongkrak nilai dari <code>Final Project</code> yang masih kurang
 </li>
 <li>
-  Apabila hasil pengerjaan(fitur) yang di submit melalui Pull Request disetujui, maka teman2 sudah berhasil mendapatkan nilai dan boleh untuk mengerjakan fitur2 yang lain lagi untuk mengumpulkan nilai sebanyak-banyaknya
-</li>
-<li>
-  <code>NOTES:</code> berkontribusi dalam project ini hukumnya <code>TIDAK WAJIB</code>, namun apabila teman2 berhasil mengumpulkan nilainya disini, nilai ini akan dipakai untuk mendongkrak nilai dari <code>Final Project</code> yang masih kurang
-</li>
-<li>
-  Ada hadiah menarik bagi teman2 yang berhasil mengerjakan fitur2 ini, yaitu:
+  Ada hadiah menarik bagi teman2 yang berhasil mengerjakan Mini project dengan 3 nilai teratas:
   <ol type="1">
     <li>🥇 GOPAY <code>150K</code> ✨</li>
     <li>🥈 GOPAY <code>100K</code> ✨</li>
@@ -54,7 +43,7 @@ yarn dev
 ## Fitur yang akan dikerjakan 💻
 
 - Referensi tampilan Web ➡️ <a href="https://sanber-daily.vercel.app" target="_blank">Visit Here</a>
-
+- Referensi penggunaan `Middleware` di Next.js ➡️ <a href="https://github.com/pace11/sanber-daily-test" target="_blank">Repo Here</a>
 - List Features 🔥
 
 <table>
@@ -65,7 +54,6 @@ yarn dev
       <th>Description</th>
       <th>Point</th>
       <th>Status</th>
-      <th>Finished By</th>
     </tr>
   </thead>
   <tbody>
@@ -83,7 +71,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Login</td>
@@ -99,7 +86,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Logout</td>
@@ -113,7 +99,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Get Profile</td>
@@ -127,7 +112,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <!-- Posts -->
     <tr>
@@ -143,7 +127,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Display Self Posts</td>
@@ -156,7 +139,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Updating Self Posts</td>
@@ -169,7 +151,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Deleting Self Posts</td>
@@ -182,7 +163,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <!-- Reply -->
     <tr>
@@ -197,7 +177,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Display List Reply by Post</td>
@@ -210,7 +189,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Reply by Post</td>
@@ -223,7 +201,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Deleting self Reply</td>
@@ -236,7 +213,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <!-- Like -->
     <tr>
@@ -251,7 +227,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Likes Post</td>
@@ -264,7 +239,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <tr>
       <td>Unlikes Post</td>
@@ -277,7 +251,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
     <!-- Notification -->
     <tr>
@@ -293,7 +266,6 @@ yarn dev
       <td>
         <input type="checkbox" />
       </td>
-      <td>...</td>
     </tr>
   </tbody>
 </table>
