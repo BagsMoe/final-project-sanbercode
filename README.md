@@ -276,7 +276,9 @@ yarn dev
 
 ## Cara Pengerjaan dan Pengumpulan 📭
 
-- Create branch dengan prefix `feature_[nama fitur]` contoh `feature_login`
-- Kerjakan semua update di branch feature yang telah dibuat sebelumnya, jangan lupa juga update file `README.md` sebelum melakukan commit dengan cara ubah column `Status` seperti ini `<input type="checkbox" checked />` kemudian isikan nama kalian di column `Finished By`
-- Untuk pengumpulannya, silahkan open `Pull Request` di repository ini, lebih detailnya apa saja yang perlu di lakukan, bisa hubungi mentor ✅ 📞
-- Apabila pengerjaannya sesuai, PR akan di approved dan point akan kalian dapatkan 👍👍
+- Setelah project ini beres, silahkan buat repository baru dengan nama `mini-project-nextjs-batch-64` kemudian push ke repo tersebut
+- Kemudian silahkan kumpulkan link repositorynya ke Dashboard LMS masing2 melalui menu `Tugas & Quiz`
+  ![Step 1](/public/step-1.png 'Step 1')
+- Scroll ke paling bawah dan submit melalui link pengumpulan `Mini Project`
+  ![Step 2](/public/step-2.png 'Step 2')
+- Semangat teman2 semoga mendapatkan hasil terbaik 🚀
