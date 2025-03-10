@@ -27,7 +27,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "hooks/useToast"  ],
   "exclude": [
     "node_modules"
   ]

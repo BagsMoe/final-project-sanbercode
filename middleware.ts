@@ -12,6 +12,8 @@ export default async function middleware(req: NextRequest) {
   if (isCookieExist && isLoginPage) {
     return NextResponse.redirect(new URL('/', req.url))
   }
+
+  return NextResponse.next()
 }
 
 export const config = {

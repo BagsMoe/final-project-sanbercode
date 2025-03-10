@@ -1,6 +1,8 @@
-import RegisterPage from "@/container/register-container";
+import { RegisterForm } from '@/container/register-container'
 export default function Register() {
-    return <div>
-        <RegisterPage />
-    </div>;
+  return (
+    <div>
+      <RegisterForm />
+    </div>
+  )
 }

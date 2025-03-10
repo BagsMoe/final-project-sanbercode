@@ -1,4 +1,4 @@
-import DropdownContainer from "../dropdown-container";
+import DropdownContainer from "@/container/dropdown-container";
 export default function HeaderContainer() {
     return (
         <header className="bg-white dark:bg-gray-800 shadow-md p-4 w-[480px]">
