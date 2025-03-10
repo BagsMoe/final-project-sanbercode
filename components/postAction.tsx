@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { MoreVertical, Trash2, Edit } from 'lucide-react'
 import { deletePost, updatePost } from '@/lib/handlePost'
-import { EditPostDialog } from '@/components/ui/editPostDialog'
+import { EditPostDialog } from '@/components/editPostDialog'
 
 type PostActionsProps = {
   postId: number
