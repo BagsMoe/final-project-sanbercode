@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
-import { getApiUrl, getFormattedDate, isOwnPost } from '@/lib/utils';
-import { Heart, MessageCircle } from 'lucide-react';
-import { likePost, unlikePost } from '@/lib/handleLikes';
-import PostActions from '@/components/postAction';
-import Link from 'next/link';
-import ReplyPopup from '@/components/replyPopup';
+import { useEffect, useState } from 'react'
+import Cookies from 'js-cookie'
+import { getApiUrl, getFormattedDate } from '@/lib/utils'
+import { Heart, MessageCircle } from 'lucide-react'
+import { likePost, unlikePost } from '@/lib/handleLikes'
+import PostActions from '@/components/postAction'
+import Link from 'next/link'
+import ReplyPopup from '@/components/replyPopup'
 
 type User = {
   id: number
@@ -28,11 +28,10 @@ type Post = {
 }
 
 export default function DisplayAllPosts() {
-  const [posts, setPosts] = useState<Post[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [selectedPostId, setSelectedPostId] = useState<number | null>(null);
-  const currentUserId = Number(Cookies.get('user_id'));
+  const [posts, setPosts] = useState<Post[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  const [selectedPostId, setSelectedPostId] = useState<number | null>(null)
 
   const fetchPosts = async () => {
     try {
@@ -116,12 +115,12 @@ export default function DisplayAllPosts() {
   if (loading) return <p className="text-center text-gray-500">Loading...</p>
   if (error) return <p className="text-center text-red-500">{error}</p>
 
-   return (
+  return (
     <div className="w-full py-10 px-5 overflow-y-auto">
       <div className="flex m-0 flex-col gap-4">
         {posts.map((post) => {
-          const initial = post.user.name.charAt(0).toUpperCase();
-          const bgColor = `hsl(${post.user.name.length * 42}, 70%, 50%)`;
+          const initial = post.user.name.charAt(0).toUpperCase()
+          const bgColor = `hsl(${post.user.name.length * 42}, 70%, 50%)`
 
           return (
             <Link href={`/profile`} key={post.id}>
@@ -139,7 +138,7 @@ export default function DisplayAllPosts() {
                     </div>
                     <div>
                       <h3 className="text-sm font-semibold text-gray-900">
-                        {post.user.name} {isOwnPost(post.users_id, currentUserId) && '(You)'}
+                        {post.user.name} {post.is_own_post && '(You)'}
                       </h3>
                       <p className="text-gray-500 text-sm">{post.user.email}</p>
                       <p className="text-gray-400 text-xs">
@@ -152,7 +151,9 @@ export default function DisplayAllPosts() {
                       postId={post.id}
                       description={post.description}
                       onDelete={() => handleDeletePost(post.id)}
-                      onUpdate={(newDescription) => handleUpdatePost(post.id, newDescription)}
+                      onUpdate={(newDescription) =>
+                        handleUpdatePost(post.id, newDescription)
+                      }
                     />
                   )}
                 </div>
@@ -162,13 +163,15 @@ export default function DisplayAllPosts() {
                   <div
                     className="flex items-center gap-2 cursor-pointer"
                     onClick={(e) => {
-                      e.preventDefault();
-                      handleLikeClick(post.id, post.is_like_post);
+                      e.preventDefault()
+                      handleLikeClick(post.id, post.is_like_post)
                     }}
                   >
                     <Heart
                       className={`w-5 h-5 ${
-                        post.is_like_post ? 'text-red-500 fill-current' : 'text-gray-600'
+                        post.is_like_post
+                          ? 'text-red-500 fill-current'
+                          : 'text-gray-600'
                       }`}
                     />
                     {post.likes_count} Likes
@@ -176,8 +179,8 @@ export default function DisplayAllPosts() {
                   <div
                     className="flex items-center gap-2 cursor-pointer"
                     onClick={(e) => {
-                      e.preventDefault();
-                      setSelectedPostId(post.id);
+                      e.preventDefault()
+                      setSelectedPostId(post.id)
                     }}
                   >
                     <MessageCircle className="w-5 h-5 text-gray-600" />
@@ -186,12 +189,18 @@ export default function DisplayAllPosts() {
                 </div>
               </div>
             </Link>
-          );
+          )
         })}
       </div>
       {selectedPostId && (
-        <ReplyPopup postId={selectedPostId} onClose={() => setSelectedPostId(null)} />
+        <ReplyPopup
+          postId={selectedPostId}
+          description={
+            posts.find((post) => post.id === selectedPostId)?.description
+          }
+          onClose={() => setSelectedPostId(null)}
+        />
       )}
     </div>
-  );
+  )
 }

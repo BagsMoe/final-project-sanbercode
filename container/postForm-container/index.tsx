@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button"
-import { Textarea } from "@/components/ui/textarea"
-import { getApiUrl } from "@/lib/utils"
-import Cookies from "js-cookie"
-import { useRouter } from "next/navigation"
-import { FormEvent, useState } from "react"
-import { mutate } from "swr"
+import { Button } from '@/components/ui/button'
+import { Textarea } from '@/components/ui/textarea'
+import { getApiUrl } from '@/lib/utils'
+import Cookies from 'js-cookie'
+import { useRouter } from 'next/navigation'
+import { FormEvent, useState } from 'react'
+import { mutate } from 'swr'
 
 export function PostFormContainer() {
   const [description, setDescription] = useState('')
@@ -52,11 +52,11 @@ export function PostFormContainer() {
       }
 
       alert('Successfully created post')
-      setDescription('') // Clear the textarea after successful submission
-      mutate('post') // Trigger SWR to re-fetch the latest posts
+      setDescription('')
+      mutate('post')
       router.push('/')
     } catch (error: any) {
-      setError(error.message || 'Unknown error occurred')  
+      setError(error.message || 'Unknown error occurred')
     } finally {
       setIsLoading(false)
     }
@@ -64,18 +64,18 @@ export function PostFormContainer() {
 
   return (
     <form onSubmit={onSubmit} className="grid w-full gap-2 mt-4">
-      <Textarea 
-        placeholder="What's happening..." 
+      <Textarea
+        placeholder="What's happening..."
         value={description}
         onChange={(event) => setDescription(event.target.value)}
       />
       {error?.errors?.description && (
         <small className="text-red-500">{error.errors.description}</small>
       )}
-      <Button 
+      <Button
         className="bg-blue-500"
-        disabled={isLoading || !description.trim()} // Disable button if description is empty
-      > 
+        disabled={isLoading || !description.trim()}
+      >
         {isLoading ? 'Loading...' : 'Send Message'}
       </Button>
     </form>
